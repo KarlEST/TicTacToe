@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body, .content {
+	height: 100%;
+	margin: 0;
+	background: #1c1e23;
+}
+
+.wrap {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+}
+
+.title {
+	width: 90vw;
+	height: 10vh;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+}
+
+.tictactoefield {
+	width: 90vw;
+	height: 70vh;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.score {
+	width: 20%;
+	height: 100%;
+	display: flex;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.playfield {
+	width: 60%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.difficulty {
+	width: 20%;
+	height: 100%;
+	display: flex;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.playfield .square {
+	width: 33.33%;
+	color: white;
+	font-size: 14vw;
+	position: relative;
+}
+
+.playfield .icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#top_left, #top, #top_right, #mid_left, #mid, #mid_right {
+	border-bottom: 1px solid #ffffff;
+}
+
+#top_left, #top, #mid_left, #mid, #bot_left, #bot {
+	border-right: 1px solid #ffffff;
+}
+
