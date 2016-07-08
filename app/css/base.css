@@ -73,7 +73,7 @@ h1 {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-}
+}/*
 
 #top_left, #top, #top_right, #mid_left, #mid, #mid_right {
 	border-bottom: 1px solid #ffffff;
@@ -83,3 +83,16 @@ h1 {
 	border-right: 1px solid #ffffff;
 }
 
+*/
+
+.square {
+	border: 3px solid white;
+	border-top: none;
+	border-left: none;
+}
+.square:nth-of-type(3n) {
+	border-right: none;
+}
+.square:nth-last-of-type(-n + 3) {
+	border-bottom: none;
+}
